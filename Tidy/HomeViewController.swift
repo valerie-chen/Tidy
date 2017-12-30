@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
     let nameString = self.getNameFromDeviceName()
     _welcomeLabel.frame = self.view.frame
     _welcomeLabel.text = String(format: "Hey %@, Happy %@!", nameString, dayString)
-    _welcomeLabel.font = UIFont.boldSystemFont(ofSize: 24.0)
+    _welcomeLabel.font = UIFont(name: "AvenirNextCondensed-DemiBold", size: 24)
     _welcomeLabel.textAlignment = .center
     
     let screenWidth = self.view.frame.width
@@ -31,10 +31,7 @@ class HomeViewController: UIViewController {
     _clockView = ClockView(frame: clockFrame)
     _clockView?.backgroundColor = .clear
     _clockView?.setup()
-    
-//    let tapGesture = UIGestureRecognizer(target: _clockView, action: #selector(_clockView?.didTap))
-//    _clockView?.addGestureRecognizer(tapGesture)
-    
+        
     self.view.addSubview(_welcomeLabel)
     self.view.addSubview(_clockView!)
     

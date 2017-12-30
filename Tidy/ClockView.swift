@@ -10,24 +10,12 @@ import UIKit
 
 class ClockView: UIView {
   
-  var showSeconds: Bool = true
-  
   override func draw(_ rect: CGRect) {
     self.drawHands()
   }
   
   func setup() {
     self.drawFrame()
-    // make dynamic
-    let tapGesture = UIGestureRecognizer(target: self, action: #selector(self.didTap))
-    self.addGestureRecognizer(tapGesture);
-    print("DID SET UP")
-  }
-  
-  func didTap() {
-    showSeconds = !showSeconds
-    drawHands()
-    print("ENTERED")
   }
   
   internal func drawFrame() {
@@ -131,11 +119,9 @@ class ClockView: UIView {
 
     minutePath.stroke()
     hourPath.stroke()
-    if (showSeconds) {
-      UIColor.red.setStroke()
-      secondPath.stroke()
-      UIColor.black.setStroke()
-    }
+    UIColor.red.setStroke()
+    secondPath.stroke()
+    UIColor.black.setStroke()
   }
   
   func start() {
