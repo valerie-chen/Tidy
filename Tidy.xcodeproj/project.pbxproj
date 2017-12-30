@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F70DC81716D3BBFE2E1B0FD /* Pods_Tidy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1949A64E17E88925B62A00 /* Pods_Tidy.framework */; };
 		980B1A3B1FF0BFD8007E740E /* TidyAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980B1A3A1FF0BFD8007E740E /* TidyAppDelegate.swift */; };
 		980B1A3D1FF0BFD8007E740E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980B1A3C1FF0BFD8007E740E /* HomeViewController.swift */; };
 		980B1A421FF0BFD8007E740E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980B1A411FF0BFD8007E740E /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8057BFF3C142B4007919CACA /* Pods-Tidy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tidy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tidy/Pods-Tidy.release.xcconfig"; sourceTree = "<group>"; };
 		980B1A371FF0BFD8007E740E /* Tidy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tidy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		980B1A3A1FF0BFD8007E740E /* TidyAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TidyAppDelegate.swift; sourceTree = "<group>"; };
 		980B1A3C1FF0BFD8007E740E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		980B1A5A1FF0BFD8007E740E /* TidyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TidyUITests.swift; sourceTree = "<group>"; };
 		980B1A5C1FF0BFD8007E740E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		980B1A681FF0C5E5007E740E /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		9C1949A64E17E88925B62A00 /* Pods_Tidy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tidy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83239C2CAA2C37141FCA9D5 /* Pods-Tidy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tidy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tidy/Pods-Tidy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F70DC81716D3BBFE2E1B0FD /* Pods_Tidy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50EFF1BC487E16A5C19E7D9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C1949A64E17E88925B62A00 /* Pods_Tidy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83AD71873D11BBED30486CCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D83239C2CAA2C37141FCA9D5 /* Pods-Tidy.debug.xcconfig */,
+				8057BFF3C142B4007919CACA /* Pods-Tidy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		980B1A2E1FF0BFD7007E740E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				980B1A4E1FF0BFD8007E740E /* TidyTests */,
 				980B1A591FF0BFD8007E740E /* TidyUITests */,
 				980B1A381FF0BFD8007E740E /* Products */,
+				83AD71873D11BBED30486CCD /* Pods */,
+				50EFF1BC487E16A5C19E7D9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 980B1A5F1FF0BFD8007E740E /* Build configuration list for PBXNativeTarget "Tidy" */;
 			buildPhases = (
+				C6F391A8399FF31D97CCCD3E /* [CP] Check Pods Manifest.lock */,
 				980B1A331FF0BFD7007E740E /* Sources */,
 				980B1A341FF0BFD7007E740E /* Frameworks */,
 				980B1A351FF0BFD7007E740E /* Resources */,
+				1B90750F604E7FC8D194D1A3 /* [CP] Embed Pods Frameworks */,
+				4943015D649A6E1354E8925C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,6 +282,74 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B90750F604E7FC8D194D1A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tidy/Pods-Tidy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tidy/Pods-Tidy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4943015D649A6E1354E8925C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tidy/Pods-Tidy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6F391A8399FF31D97CCCD3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tidy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		980B1A331FF0BFD7007E740E /* Sources */ = {
@@ -405,6 +500,7 @@
 		};
 		980B1A601FF0BFD8007E740E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D83239C2CAA2C37141FCA9D5 /* Pods-Tidy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BTRAC7FKRG;
@@ -418,6 +514,7 @@
 		};
 		980B1A611FF0BFD8007E740E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8057BFF3C142B4007919CACA /* Pods-Tidy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BTRAC7FKRG;

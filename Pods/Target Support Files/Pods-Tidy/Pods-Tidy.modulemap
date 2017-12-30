@@ -1,0 +1,6 @@
+framework module Pods_Tidy {
+  umbrella header "Pods-Tidy-umbrella.h"
+
+  export *
+  module * { export * }
+}

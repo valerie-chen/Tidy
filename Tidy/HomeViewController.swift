@@ -30,7 +30,10 @@ class HomeViewController: UIViewController {
     let clockFrame = CGRect(origin: clockOrigin, size: clockSize)
     _clockView = ClockView(frame: clockFrame)
     _clockView?.backgroundColor = .clear
-    _clockView?.drawFrame()
+    _clockView?.setup()
+    
+//    let tapGesture = UIGestureRecognizer(target: _clockView, action: #selector(_clockView?.didTap))
+//    _clockView?.addGestureRecognizer(tapGesture)
     
     self.view.addSubview(_welcomeLabel)
     self.view.addSubview(_clockView!)
